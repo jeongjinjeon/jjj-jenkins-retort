@@ -24,6 +24,12 @@ def jenkinsLog = {text, color ->
         }
 }
 
+def colorLog (text){
+	ansiColor('jenkins-system-log') {
+		echo '\u001B[31;49m'+text+'\u001B[m'
+	}    
+}
+
 def colorLog (text, color ){
     switch(color) { 
 		   case 'red': 
