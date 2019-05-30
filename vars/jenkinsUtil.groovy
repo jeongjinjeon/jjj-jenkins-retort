@@ -58,3 +58,6 @@ def colorLog (text, color ){
 def nomalLog (text, color ){
 	echo 'test'
 }
+
+//클로저 테스트
+def clos = { a, b -> print a+b }
