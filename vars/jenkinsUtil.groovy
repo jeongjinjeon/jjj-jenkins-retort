@@ -1,5 +1,5 @@
 
-def jenkinsLog = {text, color -> 
+jenkinsLog = {text, color -> 
     switch(color) { 
 		   case 'red': 
 				ansiColor('jenkins-system-log') {
